@@ -677,7 +677,7 @@ void smithyCard(int currentPlayer, int handPos, struct gameState *state)
 	}
 			
       //discard card from hand
-      discardCard(handPos, currentPlayer, state, 0);
+      discardCard(handPos, currentPlayer, state, 1);
 }
 
 void seaHagCard(int currentPlayer, struct gameState *state)
@@ -700,7 +700,7 @@ void villageCard(int currentPlayer, int handPos, struct gameState *state)
       state->numActions = state->numActions + 2;
 			
       //discard played card from hand
-      discardCard(handPos, currentPlayer, state, 1);
+      discardCard(handPos, currentPlayer, state, 0);
 }
 
 void stewardCard(int choice1, int choice2, int choice3, int currentPlayer, int handPos, struct gameState *state )
