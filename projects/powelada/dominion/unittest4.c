@@ -71,7 +71,7 @@ int main() {
 	assert(test == 1);
 
 
-	printf("All tests passed!\n");
+	printf("All tests passed! for shuffle()\n");
 
 	return 0;
 }

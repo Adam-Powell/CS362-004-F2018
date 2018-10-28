@@ -118,7 +118,7 @@ int main() {
 	assert(result == 1);
 
 
-	printf("All tests passed!\n");
+	printf("All tests passed! for isGameOver()\n");
 
 	return 0;
 }

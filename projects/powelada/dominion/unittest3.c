@@ -72,7 +72,7 @@ int main() {
 
 
 
-	printf("All tests passed!\n");
+	printf("All tests passed! for endTurn()\n");
 
 	return 0;
 }

@@ -136,7 +136,7 @@ int main() {
 	#endif
 	assert(iDiscard == testGame.discardCount[1]);
 
-	printf("All tests passed!\n");
+	printf("All tests passed! for gainCard()\n");
 
 	return 0;
 }
