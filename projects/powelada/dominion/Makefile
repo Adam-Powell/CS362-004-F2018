@@ -24,10 +24,10 @@ cardtest1: cardtest1.c dominion.o rngs.o*
 cardtest2: cardtest2.c dominion.o rngs.o* 
 	gcc -o cardtest2 -g cardtest2.c dominion.o rngs.o $(CFLAGS)
 
-cardtest3: unittest3.c dominion.o rngs.o* 
+cardtest3: cardtest3.c dominion.o rngs.o* 
 	gcc -o cardtest3 -g  cardtest3.c dominion.o rngs.o $(CFLAGS)
 
-cardtest4: unittest4.c dominion.o rngs.o* 
+cardtest4: cardtest4.c dominion.o rngs.o* 
 	gcc -o cardtest4 -g cardtest4.c dominion.o rngs.o $(CFLAGS)
 
 playdom: dominion.o playdom.c
@@ -53,7 +53,7 @@ runtests: testDrawCard
 	gcov dominion.c >> unittestresult.out
 	cat dominion.c.gcov >> unittestresult.out
 
-unittestresults:
+unittestresults:  unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4
 	./unittest1 &> unittestresult.out
 	./unittest2 >> unittestresult.out
 	./unittest3 >> unittestresult.out
